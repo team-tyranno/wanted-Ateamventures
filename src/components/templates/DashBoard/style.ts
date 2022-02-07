@@ -2,7 +2,8 @@ import styled from 'styled-components';
 
 export const Container = styled.div``;
 
-export const InfoSection = styled.div`
+export const InfoSection = styled.section`
+  width: 100%;
   overflow: hidden;
 `;
 
@@ -24,7 +25,9 @@ export const Description = styled.div`
   height: 24px;
 `;
 
-export const ButtonSection = styled.section``;
+export const ButtonSection = styled.section`
+  width: 100%;
+`;
 
 export const DropDown = styled.div`
   position: absolute;
@@ -37,22 +40,44 @@ export const DropDown = styled.div`
 `;
 
 export const ButtonSwitch = styled.div`
+  @media (min-width: 1440px) {
+    left: 1106px;
+  }
+
+  @media (max-width: 1440px) and (min-width: 903.01px) {
+    left: 569.01px;
+  }
+
+  @media (max-width: 903.01px) and (min-width: 521px) {
+    left: 32px;
+  }
+
   position: absolute;
   width: 179px;
   height: 20px;
-  left: 1106px;
   top: 204px;
   border: 1px solid black;
 `;
 
 export const CardSection = styled.section`
+  @media (min-width: 1440px) {
+    width: 1130.01px;
+  }
+
+  @media (max-width: 1440px) and (min-width: 903.01px) {
+    width: 748.01px;
+  }
+
+  @media (max-width: 903.01px) and (min-width: 521px) {
+    width: 366px;
+  }
+
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 0px;
 
   position: absolute;
-  width: 1130.01px;
   left: 155px;
   top: 262px;
 

@@ -1,9 +1,15 @@
 import styled from 'styled-components';
 
 export const Container = styled.nav`
+  @media (max-width: 360px) {
+    height: 44px;
+  }
+
+  @media (min-width: 360px) {
+    height: 70px;
+  }
   position: absolute;
   width: 100%;
-  height: 70px;
   left: 0px;
   top: 0px;
 `;
@@ -28,6 +34,30 @@ export const BackGround = styled.div`
   box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
 `;
 
+export const MenuContainer = styled.div`
+  @media (max-width: 360px) {
+    display: block;
+  }
+
+  @media (min-width: 360px) {
+    display: none;
+  }
+
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  right: 316px;
+  top: 10px;
+`;
+
+export const MenuIcon = styled.div`
+  position: absolute;
+  left: 12.5%;
+  right: 12.5%;
+  top: 25%;
+  bottom: 25%;
+`;
+
 export const LogoContainer = styled.div`
   position: absolute;
   left: 2.78%;
@@ -37,7 +67,14 @@ export const LogoContainer = styled.div`
 `;
 
 export const Aside = styled.div`
-  display: flex;
+  @media (max-width: 768px) {
+    display: none;
+  }
+
+  @media (min-width: 768px) {
+    display: flex;
+  }
+
   flex-direction: row;
   align-items: center;
   padding: 0px;

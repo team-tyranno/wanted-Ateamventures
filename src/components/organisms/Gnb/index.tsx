@@ -1,5 +1,5 @@
 import React from 'react';
-import { logo, companyPicto } from 'assets';
+import { logo, companyPicto, menuIcon } from 'assets';
 import { Divider, MenuItem, Logo } from 'components';
 import * as S from './style';
 
@@ -14,6 +14,11 @@ const signOutFontOption = {
   fontFamily: 'Noto Sans KR',
   fontSize: 14,
   fontWeight: 400,
+};
+
+const menuIconSize = {
+  height: 12,
+  width: 18,
 };
 
 const mainLogoSize = {
@@ -31,6 +36,11 @@ export function Gnb() {
     <S.Container>
       <S.MainBar>
         <S.BackGround />
+        <S.MenuContainer>
+          <S.MenuIcon>
+            <Logo src={menuIcon} size={menuIconSize} />
+          </S.MenuIcon>
+        </S.MenuContainer>
         <S.LogoContainer>
           <Logo src={logo} size={mainLogoSize} />
         </S.LogoContainer>
