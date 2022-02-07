@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
+import { Gnb, DashBoard } from 'components';
 import * as S from './style';
 
 export function Main() {
@@ -8,7 +8,7 @@ export function Main() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('/requests');
+        const response = await fetch('http://localhost:3001/requests'); // /requests
         if (response.status > 400) {
           throw new Error('에러');
         }
@@ -22,5 +22,10 @@ export function Main() {
     fetchData();
   }, []);
 
-  return <S.Container>Hello, Tyrannos!</S.Container>;
+  return (
+    <>
+      <Gnb />
+      <DashBoard />
+    </>
+  );
 }
