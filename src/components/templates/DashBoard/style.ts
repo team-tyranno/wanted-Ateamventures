@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 export const Container = styled.div``;
 
-export const InfoSection = styled.section`
-  height: 300px;
+export const InfoSection = styled.div`
+  overflow: hidden;
 `;
 
 export const DashBoardInfo = styled.div`
@@ -17,25 +17,11 @@ export const DashBoardInfo = styled.div`
 export const Title = styled.div`
   width: 97px;
   height: 32px;
-
-  font-family: Noto Sans KR;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 32px;
-
-  color: #323d45;
 `;
 
 export const Description = styled.div`
   width: 284px;
   height: 24px;
-
-  font-family: Noto Sans KR;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-
-  color: #323d45;
 `;
 
 export const ButtonSection = styled.section``;
@@ -60,10 +46,6 @@ export const ButtonSwitch = styled.div`
 `;
 
 export const CardSection = styled.section`
-  /* Frame 2980 */
-
-  /* Auto layout */
-
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -71,7 +53,6 @@ export const CardSection = styled.section`
 
   position: absolute;
   width: 1130.01px;
-  height: 728px;
   left: 155px;
   top: 262px;
 

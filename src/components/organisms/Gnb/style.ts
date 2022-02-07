@@ -28,15 +28,12 @@ export const BackGround = styled.div`
   box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
 `;
 
-export const Logo = styled.img`
+export const LogoContainer = styled.div`
   position: absolute;
   left: 2.78%;
   right: 86.6%;
   top: 35.71%;
   bottom: 35.71%;
-
-  width: 153px;
-  height: 20px;
 `;
 
 export const Aside = styled.div`
@@ -68,54 +65,31 @@ export const CompanyName = styled.div`
   flex-grow: 0;
 `;
 
-export const Picto = styled.img`
+export const PictoContainer = styled.span`
   position: absolute;
   left: 0%;
   right: 92.01%;
-  top: 12.5%;
+  top: 5.5%;
   bottom: 12.5%;
-
-  width: 16.67px;
-  height: 15px;
 `;
 
 export const Name = styled.span`
-  /* 홍길동 */
-
   position: absolute;
   left: 11.82%;
   right: 56.07%;
   top: 0%;
   bottom: 0%;
 
-  /* 14pt - 500 */
-
-  font-family: Noto Sans KR;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 20px;
-  /* identical to box height, or 143% */
-
   display: flex;
   align-items: center;
-
-  color: #ffffff;
 `;
 
 export const Divider = styled.span`
-  /* divider */
   position: static;
   left: 59.27%;
   right: 40.26%;
   top: 10%;
   bottom: 10%;
-  width: 2px;
-  height: 16px;
-
-  background-color: white;
-
-  /* Inside auto layout */
 
   flex: none;
   order: 1;
@@ -130,19 +104,8 @@ export const SignOut = styled.span`
   top: 0%;
   bottom: 0%;
 
-  /* 14pt - 400 (본문용) */
-
-  font-family: Noto Sans KR;
-  font-size: 14px;
-  line-height: 20px;
-  /* identical to box height, or 143% */
-
   display: flex;
   align-items: center;
-
-  color: #ffffff;
-
-  /* Inside auto layout */
 
   flex: none;
   order: 2;
