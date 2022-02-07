@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "es2016",
     "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": false,
+    "allowJs": true,
     "baseUrl": "src",
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -18,7 +18,7 @@
     "jsx": "react-jsx"
   },
   "include": ["src"],
-  "exclude": ["node_modules"],
+  "exclude": ["node_modules", "server"],
   "strict": true,
   "strictNullChecks": true,
   "strictFunctionTypes": true,

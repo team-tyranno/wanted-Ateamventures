@@ -8,12 +8,12 @@
 <br />
 
 <div align="center">
-  <h3 align="center">README 제목</h3>
+  <h3 align="center">2주차 과제 - 에이팀벤처스</h3>
   <p align="center">
     <a href="https://github.com/othneildrew/Best-README-Template">Best-README-Template</a>을 참고하여 만들어 본 README 템플릿입니다. 확인하시고 의견 주시면 감사하겠습니다!
     <br />
     <br />
-    <a href="https://hungry-meitner-18800a.netlify.app"><strong>배포 링크</strong></a>
+    <a href="https://wanted-ateamventures.herokuapp.com/"><strong>배포 링크</strong></a>
   </p>
 </div>
 
@@ -91,6 +91,7 @@
 - [x] 기능 1
 
 - [x] 기능 2
+
   - [x] 세부기능 2-1
   - [x] 세부기능 2-2
 
@@ -110,31 +111,36 @@
 
 ### Prerequisites
 
-1. NPM Install
+1. NPM을 설치한다
 
   ```sh
   npm install npm@latest -g
+  ```
+2. json-server를 설치하고 root에서 mock API 서버를 실행한다.
+  ```sh
+  npm i -g json-server # 설치
+  json-server --watch mockAPI.json --port 3001 # 실행
   ```
 
 ### Installation
 
 1. Repository를 clone한다.
 
-  ```sh
-  git clone https://github.com/gml9812/wanted-frontend-pre-on-boarding-mission.git
-  ```
+```sh
+git clone https://github.com/gml9812/wanted-frontend-pre-on-boarding-mission.git
+```
 
 2. NPM Package들을 설치한다.
 
-  ```sh
-  npm install
-  ```
+```sh
+npm install
+```
 
 3. Localhost 환경에서 프로젝트를 실행한다.
 
-  ```sh
-  npm start
-  ```
+```sh
+npm start
+```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 

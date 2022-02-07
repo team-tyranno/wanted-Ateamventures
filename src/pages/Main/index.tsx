@@ -8,11 +8,12 @@ export function Main() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('http://localhost:3001/requests');
+        const response = await fetch('http://localhost:3000/requests');
         if (response.status > 400) {
           throw new Error('에러');
         }
         const json = await response.json();
+        console.log(json);
         setDashBoardData(json);
       } catch (error) {
         console.log('에러2');

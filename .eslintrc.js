@@ -3,7 +3,7 @@ module.exports = {
   parserOptions: {
     project: './tsconfig.json',
   },
-  ignorePatterns: ['.eslintrc.js'],
+  ignorePatterns: ['.eslintrc.js', 'server'],
   plugins: ['@typescript-eslint', 'react-hooks'],
   env: {
     browser: true,
