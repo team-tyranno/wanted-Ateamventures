@@ -116,11 +116,6 @@
   ```sh
   npm install npm@latest -g
   ```
-2. json-server를 설치하고 root에서 mock API 서버를 실행한다.
-  ```sh
-  npm i -g json-server # 설치
-  json-server --watch mockAPI.json --port 3001 # 실행
-  ```
 
 ### Installation
 
@@ -136,10 +131,17 @@ git clone https://github.com/gml9812/wanted-frontend-pre-on-boarding-mission.git
 npm install
 ```
 
+3. 빌드 파일을 만든다.
+
+```sh
+npm run build
+```
+
 3. Localhost 환경에서 프로젝트를 실행한다.
 
 ```sh
 npm start
+# 이후 http://localhost:3001에서 결과물 확인
 ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
