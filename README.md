@@ -8,7 +8,7 @@
 <br />
 
 <div align="center">
-  <h3 align="center">README 제목</h3>
+  <h3 align="center">2주차 과제 - 에이팀벤처스</h3>
   <p align="center">
     <a href="https://github.com/othneildrew/Best-README-Template">Best-README-Template</a>을 참고하여 만들어 본 README 템플릿입니다. 확인하시고 의견 주시면 감사하겠습니다!
     <br />
@@ -110,10 +110,15 @@
 
 ### Prerequisites
 
-1. NPM Install
+1. NPM을 설치한다
 
   ```sh
   npm install npm@latest -g
+  ```
+2. json-server를 설치하고 root에서 mock API 서버를 실행한다. 
+  ```sh
+  npm i -g json-server # 설치
+  json-server --watch mockAPI.json --port 3001 # 실행
   ```
 
 ### Installation
