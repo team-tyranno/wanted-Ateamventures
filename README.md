@@ -3,6 +3,8 @@
 <div align='center'>
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
   <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=React&logoColor=blue"/>
+  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" />
+  <img src="https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white" />
 </div>
 
 <br />
@@ -69,8 +71,11 @@
 ## 과제 소개
 
 - 필터링 기능
+![filtering](https://user-images.githubusercontent.com/65898861/153092452-a83d4ab5-0dfb-4f76-add2-9313dde34202.gif)
+
 
 - mobile 버전 
+![mobile](https://user-images.githubusercontent.com/65898861/153092037-3063aa4e-203c-478f-a59b-62d7c2bd3565.gif)
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -154,14 +159,21 @@ npm start
 ## 프로젝트 구조
 
 ```bash
+.
+├── @types
 ├── public
-│   ├── index.html
-├── src
-│   ├── components
-│   ├── hooks
-│   ├── constants
-│   └── utils
-└── some_more_file.xxx
+│   └── index.html
+├── server
+│   ├── db.json
+│   └── index.js
+└── src
+    ├── assets // font, images
+    ├── commons // constants
+    ├── components // Atomic Design에 따른 컴포넌트
+    ├── pages
+    ├── styles //  global styles
+    ├── types
+    └── index.tsx
 ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
