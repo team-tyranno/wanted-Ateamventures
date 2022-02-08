@@ -1,21 +1,12 @@
 import React from 'react';
+import { ItemType } from 'types';
 import * as S from './style';
 
 interface ItemProps {
-  item: {
-    id: number;
-    title: string;
-    client: string;
-    due: string;
-    count: number;
-    amount: number;
-    method: object;
-    material: object;
-    status: string;
-  };
+  item: ItemType;
 }
 
-export function CardItem({ item }: ItemProps) {
+export function CardItem({ item }: ItemProps): React.ReactElement {
   const { title, client, due, count, amount, method, material, status } = item;
 
   return (

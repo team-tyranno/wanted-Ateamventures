@@ -1,18 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { CardItem } from 'components/molecules/CardItem';
+import { ItemType } from 'types';
 import * as S from './style';
-
-interface ItemType {
-  id: number;
-  title: string;
-  client: string;
-  due: string;
-  count: number;
-  amount: number;
-  method: Array<string>;
-  material: Array<string>;
-  status: string;
-}
 
 export function CardSection({
   filteredItems,
