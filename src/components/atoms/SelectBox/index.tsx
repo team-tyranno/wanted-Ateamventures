@@ -19,9 +19,12 @@ export function SelectBox({ title, selectList, filter, setFilter }: ISelectBoxPr
       setFilter(filter.filter((e) => e !== id));
     } else setFilter([...filter, id]);
   };
+  const onBlur = () => {
+    if (isShown) setIsShown(false);
+  };
 
   return (
-    <S.Container>
+    <S.Container tabIndex={0} onBlur={onBlur}>
       <S.DropDown onClick={() => toggleList()} isSelected={filter.length > 0}>
         <S.Title>
           {title}

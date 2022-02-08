@@ -37,7 +37,6 @@ export const Title = styled.div`
   right: 41.84%;
   top: calc(50% - 14px / 2);
   font-family: 'Noto Sans KR Regular';
-  color: #323d45;
   font-size: 12px;
   line-height: 14px;
   display: flex;

@@ -5,7 +5,7 @@ import { refresh } from 'assets';
 import * as S from './style';
 
 export function ButtonSection() {
-  const initArr: number[] = [];
+  const initArr: Array<number> = [];
   const [methodFilter, setMethodFilter] = useState(initArr);
   const [materialFilter, setMaterialFilter] = useState(initArr);
   const resetFilters = () => {
