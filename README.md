@@ -71,11 +71,11 @@
 ## 과제 소개
 
 - 필터링 기능
-<img src="https://user-images.githubusercontent.com/65898861/153092452-a83d4ab5-0dfb-4f76-add2-9313dde34202.gif" width="50%" />
+<img src="https://user-images.githubusercontent.com/65898861/153092452-a83d4ab5-0dfb-4f76-add2-9313dde34202.gif" width="75%" />
 
 
 - mobile 버전
-<img src="https://user-images.githubusercontent.com/65898861/153092037-3063aa4e-203c-478f-a59b-62d7c2bd3565.gif" width="25%" />
+<img src="https://user-images.githubusercontent.com/65898861/153092037-3063aa4e-203c-478f-a59b-62d7c2bd3565.gif" width="50%" />
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
