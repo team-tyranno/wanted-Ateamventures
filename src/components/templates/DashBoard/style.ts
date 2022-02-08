@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { STYLE } from 'constants';
 
 export const Container = styled.div`
   width: 78%;
