@@ -2,7 +2,7 @@ import React from 'react';
 
 import * as S from './style';
 
-interface LogoProps {
+interface IconProps {
   src: string;
   size: {
     height: number;
@@ -10,6 +10,6 @@ interface LogoProps {
   };
 }
 
-export function Logo({ src, size }: LogoProps) {
+export function Icon({ src, size }: IconProps) {
   return <S.Container src={src} size={size} />;
 }

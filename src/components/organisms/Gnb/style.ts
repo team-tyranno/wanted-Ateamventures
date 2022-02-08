@@ -1,11 +1,12 @@
 import styled from 'styled-components';
+import { logo } from 'assets';
 
 export const Container = styled.nav`
-  @media (max-width: 360px) {
+  @media (max-width: 768px) {
     height: 44px;
   }
 
-  @media (min-width: 360px) {
+  @media (min-width: 768px) {
     height: 70px;
   }
   position: absolute;
@@ -35,116 +36,54 @@ export const BackGround = styled.div`
 `;
 
 export const MenuContainer = styled.div`
-  @media (max-width: 360px) {
-    display: block;
+  @media (max-width: 768px) {
+    position: absolute;
+    display: flex;
+    width: 128.8px;
+    height: 24px;
+    left: 20px;
+    top: 10px;
   }
-
-  @media (min-width: 360px) {
-    display: none;
-  }
-
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  right: 316px;
-  top: 10px;
 `;
 
 export const MenuIcon = styled.div`
-  position: absolute;
+  @media (max-width: 768px) {
+    display: block;
+  }
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+
+  padding-top: 3px;
+  padding-bottom: 6px;
   left: 12.5%;
   right: 12.5%;
   top: 25%;
   bottom: 25%;
 `;
 
-export const LogoContainer = styled.div`
-  position: absolute;
-  left: 2.78%;
-  right: 86.6%;
-  top: 35.71%;
-  bottom: 35.71%;
-`;
-
-export const Aside = styled.div`
+export const Logo = styled.div`
   @media (max-width: 768px) {
-    display: none;
+    margin-top: 6px;
+    margin-left: 19px;
+    width: 91.8px;
+    height: 12px;
+    left: 16.67%;
+    right: 57.83%;
+    top: 1.63%;
+    bottom: 97.15%;
   }
 
   @media (min-width: 768px) {
-    display: flex;
+    position: absolute;
+    width: 153px;
+    height: 20px;
+    left: 2.78%;
+    right: 86.6%;
+    top: 35.71%;
+    bottom: 35.71%;
   }
-
-  flex-direction: row;
-  align-items: center;
-  padding: 0px;
-
-  position: absolute;
-  width: 208.67px;
-  height: 20px;
-  right: 40px;
-  top: 25px;
-`;
-
-export const CompanyName = styled.div`
-  /* Group 2834 */
-
-  position: static;
-  width: 91.67px;
-  height: 20px;
-  left: 0px;
-  top: 0px;
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-`;
-
-export const PictoContainer = styled.span`
-  position: absolute;
-  left: 0%;
-  right: 92.01%;
-  top: 5.5%;
-  bottom: 12.5%;
-`;
-
-export const Name = styled.span`
-  position: absolute;
-  left: 11.82%;
-  right: 56.07%;
-  top: 0%;
-  bottom: 0%;
-
-  display: flex;
-  align-items: center;
-`;
-
-export const Divider = styled.span`
-  position: static;
-  left: 59.27%;
-  right: 40.26%;
-  top: 10%;
-  bottom: 10%;
-
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-  margin: 0px 32px;
-`;
-
-export const SignOut = styled.span`
-  position: static;
-  left: 75.08%;
-  right: 0%;
-  top: 0%;
-  bottom: 0%;
-
-  display: flex;
-  align-items: center;
-
-  flex: none;
-  order: 2;
-  flex-grow: 0;
+  background-size: cover;
+  background-image: url('${logo}');
 `;
