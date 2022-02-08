@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { SelectBox } from 'components';
 
 import * as S from './style';
 
@@ -22,5 +23,13 @@ export function Main() {
     fetchData();
   }, []);
 
-  return <S.Container>Hello, Tyrannos!</S.Container>;
+  return (
+    <S.Container>
+      Hello, Tyrannos!
+      <S.Container>
+        <SelectBox title="가공방식" />
+        <SelectBox title="재료" />
+      </S.Container>
+    </S.Container>
+  );
 }
