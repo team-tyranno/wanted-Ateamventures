@@ -25,11 +25,11 @@ export function CardItem({ item }: ItemProps): React.ReactElement {
       </dl>
       <dl>
         <dt>가공방식</dt>
-        <dd>{method}</dd>
+        <dd>{method.join(', ')}</dd>
       </dl>
       <dl>
         <dt>재료</dt>
-        <dd>{material}</dd>
+        <dd>{material.join(', ')}</dd>
       </dl>
       <div>
         <button type="button" className="request">
@@ -39,7 +39,8 @@ export function CardItem({ item }: ItemProps): React.ReactElement {
           채팅하기
         </button>
       </div>
-      <span className="inquiry">{status}</span>
+
+      {status === '상담중' && <span className="inquiry">{status}</span>}
     </S.Wrapper>
   );
 }
