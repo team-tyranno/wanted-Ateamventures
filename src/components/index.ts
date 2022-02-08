@@ -2,11 +2,13 @@
 export { Toggle } from 'components/atoms/Toggle';
 export { Divider } from 'components/atoms/Divider';
 export { Icon } from 'components/atoms/Icon';
-
-export { DashBoardInfo } from 'components/molecules/DashBoardInfo';
+export { MenuItem } from 'components/atoms/MenuItem';
+export { Logo } from 'components/atoms/Logo';
+export { SelectBox } from 'components/atoms/SelectBox';
 
 // Molecules
 export { ToggleSection } from 'components/molecules/ToggleSection';
+export { DashBoardInfo } from 'components/molecules/DashBoardInfo';
 
 // Organisms
 export { Gnb } from 'components/organisms/Gnb';
