@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { SelectBox, ToggleSection } from 'components';
-import { processMethods, materials } from 'constants/dropDown';
+import { processMethods, materials } from 'commons/dropDown';
 import { refresh } from 'assets';
 import * as S from './style';
 

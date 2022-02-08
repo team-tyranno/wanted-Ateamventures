@@ -36,10 +36,8 @@ export const Title = styled.div`
   left: 12.24%;
   right: 41.84%;
   top: calc(50% - 14px / 2);
-  font-family: 'Noto Sans KR';
-
-  font-style: normal;
-  font-weight: 400;
+  font-family: 'Noto Sans KR Regular';
+  color: #323d45;
   font-size: 12px;
   line-height: 14px;
   display: flex;
@@ -64,8 +62,7 @@ export const ArrowDropDown = styled.img`
 
 export const SelectUl = styled.ul`
   position: absolute;
-  font-family: 'Noto Sans KR';
-  font-weight: 500;
+  font-family: 'Noto Sans KR Medium';
   font-size: 14px;
   top: 36px;
   left: 0;

@@ -1,11 +1,12 @@
 import styled from 'styled-components';
+import { STYLE } from 'commons';
 
 export const Aside = styled.div`
-  @media (max-width: 768px) {
+  @media (max-width: ${STYLE.MOBILE_WIDTH}px) {
     display: none;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: ${STYLE.MOBILE_WIDTH}px) {
     display: flex;
   }
 
@@ -21,15 +22,11 @@ export const Aside = styled.div`
 `;
 
 export const CompanyName = styled.div`
-  /* Group 2834 */
-
   position: static;
   width: 91.67px;
   height: 20px;
   left: 0px;
   top: 0px;
-
-  /* Inside auto layout */
 
   flex: none;
   order: 0;
@@ -54,9 +51,8 @@ export const Name = styled.span`
   display: flex;
   align-items: center;
 
-  font-family: Noto Sans KR;
+  font-family: Noto Sans KR Medium;
   font-size: 14px;
-  font-weight: 500;
   font-style: normal;
 
   color: white;
@@ -91,9 +87,8 @@ export const SignOut = styled.span`
   order: 2;
   flex-grow: 0;
 
-  font-family: Noto Sans KR;
+  font-family: Noto Sans KR Regular;
   font-size: 14px;
-  font-weight: 400;
 
   color: white;
 

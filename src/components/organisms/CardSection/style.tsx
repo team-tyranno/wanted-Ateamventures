@@ -13,17 +13,16 @@ export const Container = styled.section`
     width: 366px;
   } */
 
-  width: 100%;
-
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-
-  margin-top: 32px;
-
   /* position: absolute;
   left: 155px;
   top: 262px; */
 
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 16px;
+  row-gap: 16px;
+
+  width: 100%;
+  margin-top: 32px;
   border: 1px solid black;
 `;
