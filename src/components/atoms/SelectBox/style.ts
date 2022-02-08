@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   position: relative;
+  outline: none;
 `;
 
 export const DropDown = styled.div<{ isSelected: boolean }>`
