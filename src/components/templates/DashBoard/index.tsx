@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { ButtonSection, InfoSection, CardSection } from 'components';
 import * as S from './style';
 
@@ -15,11 +15,13 @@ interface ItemType {
 }
 
 export function DashBoard({ dashBoardData }: { dashBoardData: Array<ItemType> }) {
+  const [filteredItems, setFilteredItems] = useState<Array<ItemType>>(dashBoardData);
+
   return (
     <S.Container>
       <InfoSection />
       <ButtonSection />
-      <CardSection />
+      <CardSection filteredItems={filteredItems} />
     </S.Container>
   );
 }
