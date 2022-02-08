@@ -45,9 +45,8 @@ export const Div = styled.div`
   font-size: 12px;
   /* line-height: 1.6; */
   color: #2196f3;
-  font-family: 'Noto Sans KR';
+  font-family: 'Noto Sans KR Regular';
   margin-left: 15px;
-  font-weight: 400;
 `;
 
 export const ResetIcon = styled.img`
