@@ -6,6 +6,7 @@ export { SelectBox } from 'components/atoms/SelectBox';
 
 // Molecules
 export { ToggleSection } from 'components/molecules/ToggleSection';
+export { CardItem } from 'components/molecules/CardItem';
 
 // Organisms
 export { Gnb } from 'components/organisms/Gnb';
