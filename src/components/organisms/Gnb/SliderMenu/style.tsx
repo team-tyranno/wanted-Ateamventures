@@ -70,7 +70,7 @@ export const Item = styled.div`
   height: 20px;
   margin-bottom: 20px;
 
-  font-family: Noto Sans KR;
+  font-family: Noto Sans KR Regular;
   font-size: 14px;
   line-height: 20px;
 

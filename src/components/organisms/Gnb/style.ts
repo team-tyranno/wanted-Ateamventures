@@ -1,12 +1,13 @@
 import styled from 'styled-components';
+import { STYLE } from 'commons';
 import { logo } from 'assets';
 
 export const Container = styled.nav`
-  @media (max-width: 768px) {
+  @media (max-width: ${STYLE.MOBILE_WIDTH}px) {
     height: 44px;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: ${STYLE.MOBILE_WIDTH}px) {
     height: 70px;
   }
   position: absolute;
@@ -36,7 +37,7 @@ export const BackGround = styled.div`
 `;
 
 export const MenuContainer = styled.div`
-  @media (max-width: 768px) {
+  @media (max-width: ${STYLE.MOBILE_WIDTH}px) {
     position: absolute;
     display: flex;
     width: 128.8px;
@@ -47,11 +48,11 @@ export const MenuContainer = styled.div`
 `;
 
 export const MenuIcon = styled.div`
-  @media (max-width: 768px) {
+  @media (max-width: ${STYLE.MOBILE_WIDTH}px) {
     display: block;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: ${STYLE.MOBILE_WIDTH}px) {
     display: none;
   }
 
@@ -64,7 +65,7 @@ export const MenuIcon = styled.div`
 `;
 
 export const Logo = styled.div`
-  @media (max-width: 768px) {
+  @media (max-width: ${STYLE.MOBILE_WIDTH}px) {
     margin-top: 6px;
     margin-left: 19px;
     width: 91.8px;
@@ -75,7 +76,7 @@ export const Logo = styled.div`
     bottom: 97.15%;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: ${STYLE.MOBILE_WIDTH}px) {
     position: absolute;
     width: 153px;
     height: 20px;
