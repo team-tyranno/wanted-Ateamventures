@@ -9,7 +9,7 @@ export const Container = styled.div`
 
 export const Title = styled.div`
   font-family: 'Noto Sans KR';
-  font-size: 20;
+  font-size: 20px;
   font-weight: 600;
 
   line-height: 32px;
@@ -19,7 +19,7 @@ export const Title = styled.div`
 
 export const Description = styled.div`
   font-family: 'Noto Sans KR';
-  font-size: 16;
+  font-size: 16px;
   font-weight: 400;
 
   line-height: 24px;
