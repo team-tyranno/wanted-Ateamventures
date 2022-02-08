@@ -3,6 +3,7 @@ export { Toggle } from 'components/atoms/Toggle';
 export { Divider } from 'components/atoms/Divider';
 export { MenuItem } from 'components/atoms/MenuItem';
 export { Logo } from 'components/atoms/Logo';
+export { SelectBox } from 'components/atoms/SelectBox';
 
 // Molecules
 export { ToggleSection } from 'components/molecules/ToggleSection';

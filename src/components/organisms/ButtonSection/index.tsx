@@ -1,17 +1,22 @@
 import React from 'react';
-import { ToggleSection } from 'components';
+import { SelectBox, ToggleSection } from 'components';
+import { processMethods, materials } from 'constants/dropDown';
+import { refresh } from 'assets';
 import * as S from './style';
 
 export function ButtonSection() {
   return (
     <S.Container>
-      <S.Select name="language">
-        <option value="none">=== 선택 ===</option>
-        <option value="korean">한국어</option>
-        <option value="english">영어</option>
-        <option value="chinese">중국어</option>
-        <option value="spanish">스페인어</option>
-      </S.Select>
+      <S.DropDownWrap>
+        <S.DropDown>
+          <SelectBox title={processMethods.title} selectList={processMethods.selectList} />
+          <SelectBox title={materials.title} selectList={materials.selectList} />
+        </S.DropDown>
+        <S.Div>
+          <S.ResetIcon src={refresh} />
+          필터링 리셋
+        </S.Div>
+      </S.DropDownWrap>
       <ToggleSection />
     </S.Container>
   );
