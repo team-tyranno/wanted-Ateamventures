@@ -75,6 +75,11 @@ export const Wrapper = styled.article`
     border-radius: 4px;
     padding: 6px 12px;
     margin-inline-end: 8px;
+
+    font-family: 'Noto Sans KR Medium';
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
     cursor: pointer;
 
     &.request {
@@ -86,7 +91,7 @@ export const Wrapper = styled.article`
     }
 
     &.contact {
-      width: 76px;
+      width: 80px;
       height: 32px;
       border: 1px solid #2196f3;
       background-color: #ffffff;
@@ -100,15 +105,16 @@ export const Wrapper = styled.article`
     right: 16px;
     cursor: default;
 
-    width: 50px;
+    width: 56px;
     height: 24px;
-    padding: 2px 8px;
     border: 1px solid #ffa000;
     border-radius: 12px;
 
     background-color: #ffffff;
     color: #ffa000;
+    font-family: 'Noto Sans KR Medium';
     font-size: 12px;
     line-height: 20px;
+    text-align: center;
   }
 `;
