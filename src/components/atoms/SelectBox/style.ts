@@ -11,6 +11,7 @@ export const DropDown = styled.div<{ isSelected: boolean }>`
   padding: 4px 12px;
   /* position: absolute; */
   /* width: 98px; */
+  /* min-width: max-content; */
   height: 32px;
   /* left: 155px;
   top: 198px; */

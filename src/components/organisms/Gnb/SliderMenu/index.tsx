@@ -22,7 +22,9 @@ export function SliderMenu({ visible, onClick }: SliderMenuProps) {
         <S.SliderMenuLine />
         <S.ItemList>
           <S.Item>
-            <Icon src={companyPictoBlack} size={companyPictoSize} />
+            <S.IconWrap>
+              <Icon src={companyPictoBlack} size={companyPictoSize} />
+            </S.IconWrap>
             파트너정밀가공
           </S.Item>
           <S.Item>로그아웃</S.Item>

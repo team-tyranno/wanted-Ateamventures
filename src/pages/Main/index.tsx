@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Gnb, DashBoard } from 'components';
+import { ItemType } from 'types';
 import * as S from './style';
 
 export function Main() {
-  const [dashBoardData, setDashBoardData] = useState([]);
+  const [dashBoardData, setDashBoardData] = useState<Array<ItemType>>([]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -25,7 +26,7 @@ export function Main() {
   return (
     <S.Container>
       <Gnb />
-      <DashBoard />
+      <DashBoard dashBoardData={dashBoardData} />
     </S.Container>
   );
 }

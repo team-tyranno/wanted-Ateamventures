@@ -1,13 +1,25 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { SelectBox, ToggleSection } from 'components';
 import { processMethods, materials } from 'commons/dropDown';
 import { refresh } from 'assets';
 import * as S from './style';
 
-export function ButtonSection() {
-  const initArr: Array<number> = [];
-  const [methodFilter, setMethodFilter] = useState(initArr);
-  const [materialFilter, setMaterialFilter] = useState(initArr);
+export interface IButtonSectionProps {
+  setIsToggle: React.Dispatch<React.SetStateAction<boolean>>;
+  methodFilter: string[];
+  setMethodFilter: (value: string[]) => void;
+  materialFilter: string[];
+  setMaterialFilter: (value: string[]) => void;
+}
+
+export function ButtonSection({
+  setIsToggle,
+  methodFilter,
+  setMethodFilter,
+  materialFilter,
+  setMaterialFilter,
+}: IButtonSectionProps) {
+  const initArr: string[] = [];
   const resetFilters = () => {
     setMethodFilter(initArr);
     setMaterialFilter(initArr);
@@ -30,12 +42,14 @@ export function ButtonSection() {
             setFilter={setMaterialFilter}
           />
         </S.DropDown>
-        <S.Div onClick={() => resetFilters()}>
-          <S.ResetIcon src={refresh} />
-          필터링 리셋
-        </S.Div>
+        {methodFilter.length || materialFilter.length ? (
+          <S.Div onClick={() => resetFilters()}>
+            <S.ResetIcon src={refresh} />
+            필터링 리셋
+          </S.Div>
+        ) : null}
       </S.DropDownWrap>
-      <ToggleSection />
+      <ToggleSection setIsToggle={setIsToggle} />
     </S.Container>
   );
 }
