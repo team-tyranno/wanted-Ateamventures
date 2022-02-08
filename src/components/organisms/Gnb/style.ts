@@ -62,6 +62,7 @@ export const MenuIcon = styled.div`
   right: 12.5%;
   top: 25%;
   bottom: 25%;
+  cursor: pointer;
 `;
 
 export const Logo = styled.div`

@@ -10,7 +10,7 @@
 <div align="center">
   <h3 align="center">2주차 과제 - 에이팀벤처스</h3>
   <p align="center">
-    <a href="https://github.com/othneildrew/Best-README-Template">Best-README-Template</a>을 참고하여 만들어 본 README 템플릿입니다. 확인하시고 의견 주시면 감사하겠습니다!
+    필터링 기능이 있는 대시보드를 구현한 과제입니다.
     <br />
     <br />
     <a href="https://wanted-ateamventures.herokuapp.com/"><strong>배포 링크</strong></a>
@@ -55,10 +55,10 @@
     <td align="center"><b>김재원</b></td>
   </tr>
   <tr>
-    <td align="center"><b>FE Developer</b></td>
-    <td align="center"><b>FE Developer</b></td>
-    <td align="center"><b>FE Developer</b></td>
-    <td align="center"><b>FE Developer</b></td>
+    <td align="center"><b>GNB 및 레이아웃</b></td>
+    <td align="center"><b>드롭다운 버튼</b></td>
+    <td align="center"><b>슬라이더 버튼</b></td>
+    <td align="center"><b>견적 요청 카드</b></td>
   </tr>
 </table>
 
@@ -68,15 +68,10 @@
 
 ## 과제 소개
 
-간략한 과제 소개 및 jpg, gif가 들어갈 영역입니다.
+- 필터링 기능
 
-- 과제 소개 1
+- mobile 버전 
 
-![slider](https://user-images.githubusercontent.com/28294925/150082839-44f592e6-bdaa-4081-9281-12075b2c60d0.gif)
-
-- 과제 소개 2
-
-![responsive](https://user-images.githubusercontent.com/28294925/150082899-efbb1c3d-fd02-4134-8948-05d14bcb28de.gif)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -85,19 +80,18 @@
 <br>
 
 ## 구현한 기능
-
-구현한 기능 목록을 작성할 영역입니다.
-
-- [x] 기능 1
-
-- [x] 기능 2
-
-  - [x] 세부기능 2-1
-  - [x] 세부기능 2-2
-
-- [x] 기능 3
-  - [x] 세부기능 3-1
-  - [x] 세부기능 3-2
+- [x] GNB
+  - [x] 'CAPA 파트너스' 로고, 가공 업체, 로그아웃 버튼 구현
+  - [x] mobile 화면에서 메뉴 버튼 클릭 시 슬라이드 메뉴 생성
+- [x] 버튼
+  - [x] 드롭다운 버튼 클릭 시 서브메뉴 표시
+  - [x] 서브메뉴 선택 시 '필터링 리셋' 버튼 생성
+  - [x] '필터링 리셋' 버튼 클릭 시 선택된 서브메뉴 요소 초기화
+  - [x] 슬라이더 버튼 구현
+- [x] 견적 요청 카드
+  - [x] 서브메뉴 선택 혹은 필터링 리셋 버튼 클릭 시 조건에 맞는 카드만 표시
+  - [x] 조건에 맞는 카드가 없을 경우 빈 화면 표시
+- [x] GNB, 버튼, 견적 요청 카드에 반응형 레이아웃 구현
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -115,6 +109,13 @@
 
   ```sh
   npm install npm@latest -g
+  
+  ```
+2. json-server를 설치한다
+
+  ```sh
+  npm i -g json-server
+  
   ```
 
 ### Installation
@@ -141,7 +142,7 @@ npm run build
 
 ```sh
 npm start
-# 이후 http://localhost:3001에서 결과물 확인
+# 이후 http://localhost:3000에서 결과물 확인
 ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -151,8 +152,6 @@ npm start
 <br>
 
 ## 프로젝트 구조
-
-프로젝트 구조를 작성할 영역입니다. (Optional)
 
 ```bash
 ├── public
