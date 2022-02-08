@@ -13,7 +13,7 @@ export function CardItem({ item }: ItemProps): React.ReactElement {
     <S.Wrapper>
       <h3>{title}</h3>
       <h5>{client}</h5>
-      <span>{due}까지 납기</span>
+      <span className="duedate">{due}까지 납기</span>
       <hr />
       <dl>
         <dt>도면개수</dt>
@@ -32,10 +32,14 @@ export function CardItem({ item }: ItemProps): React.ReactElement {
         <dd>{material}</dd>
       </dl>
       <div>
-        <button type="button">요청 내역 보기</button>
-        <button type="button">채팅하기</button>
+        <button type="button" className="request">
+          요청 내역 보기
+        </button>
+        <button type="button" className="contact">
+          채팅하기
+        </button>
       </div>
-      <span>{status}</span>
+      <span className="inquiry">{status}</span>
     </S.Wrapper>
   );
 }
