@@ -14,7 +14,6 @@ export function Main() {
           throw new Error('에러');
         }
         const json = await response.json();
-        console.log(json);
         setDashBoardData(json);
       } catch (error) {
         console.log('에러2');

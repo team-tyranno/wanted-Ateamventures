@@ -9,18 +9,15 @@ export function CardSection({
   filteredItems: Array<ItemType>;
 }): React.ReactElement {
   return (
-    <>
-      <S.Container>
-        {filteredItems.map((item) => (
-          <CardItem key={item.id} item={item} />
-        ))}
-      </S.Container>
-
+    <S.Container>
+      {filteredItems.map((item) => (
+        <CardItem key={item.id} item={item} />
+      ))}
       {filteredItems.length === 0 && (
         <S.NoResult>
           <span>조건에 맞는 견적 요청이 없습니다.</span>
         </S.NoResult>
       )}
-    </>
+    </S.Container>
   );
 }
