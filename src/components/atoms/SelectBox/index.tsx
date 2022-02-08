@@ -6,18 +6,18 @@ import * as S from './style';
 export interface ISelectBoxProps {
   title: string;
   selectList: string[];
-  filter: number[];
-  setFilter: (value: number[]) => void;
+  filter: string[];
+  setFilter: (value: string[]) => void;
 }
 
 export function SelectBox({ title, selectList, filter, setFilter }: ISelectBoxProps) {
   const [isShown, setIsShown] = useState(false);
 
   const toggleList = () => (isShown ? setIsShown(false) : setIsShown(true));
-  const addFilter = (id: number) => {
-    if (filter.includes(id)) {
-      setFilter(filter.filter((e) => e !== id));
-    } else setFilter([...filter, id]);
+  const addFilter = (label: string) => {
+    if (filter.includes(label)) {
+      setFilter(filter.filter((e) => e !== label));
+    } else setFilter([...filter, label]);
   };
   const onBlur = () => {
     if (isShown) setIsShown(false);
@@ -34,9 +34,9 @@ export function SelectBox({ title, selectList, filter, setFilter }: ISelectBoxPr
       </S.DropDown>
       {isShown && (
         <S.SelectUl>
-          {selectList.map((el, idx) => (
-            <S.SelectLi key={nanoid()} onClick={() => addFilter(idx)}>
-              <S.CheckboxImg src={filter.includes(idx) ? CheckboxOn : Checkbox} />
+          {selectList.map((el) => (
+            <S.SelectLi key={nanoid()} onClick={() => addFilter(el)}>
+              <S.CheckboxImg src={filter.includes(el) ? CheckboxOn : Checkbox} />
               {el}
             </S.SelectLi>
           ))}
