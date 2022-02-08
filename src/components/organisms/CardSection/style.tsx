@@ -7,6 +7,7 @@ export const Container = styled.section`
 
   width: 100%;
   margin-top: 32px;
+  margin-bottom: 100px;
 `;
 
 export const NoResult = styled.section`
