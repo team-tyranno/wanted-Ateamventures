@@ -1,10 +1,16 @@
 import styled from 'styled-components';
 
-export const Container = styled.div``;
+export const Container = styled.div`
+  width: 78%;
+  height: 1100px;
 
-export const InfoSection = styled.section`
-  width: 100%;
-  overflow: hidden;
+  @media (max-width: 360px) {
+    margin-top: 68px;
+  }
+
+  @media (min-width: 360px) {
+    margin-top: 110px;
+  }
 `;
 
 export const ButtonSection = styled.section`
