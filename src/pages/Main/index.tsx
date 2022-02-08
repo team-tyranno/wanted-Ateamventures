@@ -23,9 +23,9 @@ export function Main() {
   }, []);
 
   return (
-    <>
+    <S.Container>
       <Gnb />
       <DashBoard />
-    </>
+    </S.Container>
   );
 }
