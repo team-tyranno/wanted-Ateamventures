@@ -4,6 +4,10 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 360px) {
+    margin-top: 20px;
+  }
 `;
 
 export const Text = styled.span`

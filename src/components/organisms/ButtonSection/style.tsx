@@ -8,6 +8,12 @@ export const Container = styled.div`
   align-items: center;
 
   margin-top: 32px;
+
+  @media (max-width: 360px) {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+  }
 `;
 
 export const Select = styled.select`
