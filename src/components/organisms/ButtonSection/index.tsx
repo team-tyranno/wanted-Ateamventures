@@ -1,5 +1,5 @@
 import React from 'react';
-import { Toggle } from 'components';
+import { ToggleSection } from 'components';
 import * as S from './style';
 
 export function ButtonSection() {
@@ -12,7 +12,7 @@ export function ButtonSection() {
         <option value="chinese">중국어</option>
         <option value="spanish">스페인어</option>
       </S.Select>
-      <Toggle />
+      <ToggleSection />
     </S.Container>
   );
 }
