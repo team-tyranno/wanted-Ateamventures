@@ -79,6 +79,7 @@ export const SignOut = styled.span`
   right: 0%;
   top: 0%;
   bottom: 0%;
+  cursor: pointer;
 
   display: flex;
   align-items: center;

@@ -9,6 +9,7 @@ export const Wrapper = styled.article`
   max-width: 450px;
   height: 356px;
   border: 1px solid #e5e5e5;
+  border-radius: 4px;
   padding: 16px 24px;
   background-color: #ffffff;
 
