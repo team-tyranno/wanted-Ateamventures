@@ -12,6 +12,11 @@ export const Wrapper = styled.article`
   padding: 16px 24px;
   background-color: #ffffff;
 
+  &:hover {
+    border: 2px solid #2196f3;
+    padding: 15px 23px;
+  }
+
   h3 {
     margin-bottom: 4px;
     color: #323d45;
