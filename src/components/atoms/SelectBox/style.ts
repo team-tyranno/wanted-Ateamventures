@@ -4,7 +4,7 @@ export const Container = styled.div`
   position: relative;
 `;
 
-export const DropDown = styled.div`
+export const DropDown = styled.div<{ isSelected: boolean }>`
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -18,12 +18,16 @@ export const DropDown = styled.div`
   border: 1px solid #939fa5;
   box-sizing: border-box;
   border-radius: 4px;
-
+  color: #323d45;
   /* justify-content: space-between; */
   cursor: pointer;
   &:hover {
     border: 1px solid #2196f3;
   }
+  ${(props) =>
+    props.isSelected &&
+    `background: #1565C0; 
+    color: #ffffff;`}
 `;
 
 export const Title = styled.div`
@@ -33,7 +37,6 @@ export const Title = styled.div`
   right: 41.84%;
   top: calc(50% - 14px / 2);
   font-family: 'Noto Sans KR Regular';
-  color: #323d45;
   font-size: 12px;
   line-height: 14px;
   display: flex;
@@ -83,5 +86,5 @@ export const CheckboxImg = styled.img`
   height: 18px;
   margin-right: 5px;
   border-radius: 2px;
-  border: 2px solid #939fa5;
+  /* border: 2px solid #939fa5; */
 `;
