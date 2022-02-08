@@ -7,24 +7,6 @@ export const InfoSection = styled.section`
   overflow: hidden;
 `;
 
-export const DashBoardInfo = styled.div`
-  position: absolute;
-  width: 284px;
-  height: 56px;
-  left: 155px;
-  top: 110px;
-`;
-
-export const Title = styled.div`
-  width: 97px;
-  height: 32px;
-`;
-
-export const Description = styled.div`
-  width: 284px;
-  height: 24px;
-`;
-
 export const ButtonSection = styled.section`
   width: 100%;
 `;

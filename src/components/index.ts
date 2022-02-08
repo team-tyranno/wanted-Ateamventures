@@ -1,6 +1,7 @@
 export { Divider } from 'components/atoms/Divider';
-export { MenuItem } from 'components/atoms/MenuItem';
-export { Logo } from 'components/atoms/Logo';
+export { Icon } from 'components/atoms/Icon';
+
+export { DashBoardInfo } from 'components/molecules/DashBoardInfo';
 
 export { Gnb } from 'components/organisms/Gnb';
 
