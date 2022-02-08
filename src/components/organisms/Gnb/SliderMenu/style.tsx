@@ -60,6 +60,10 @@ export const SliderMenuLine = styled.div`
   background-color: #e5e5e5;
 `;
 
+export const IconWrap = styled.div`
+  margin-right: 8px;
+`;
+
 export const ItemList = styled.div`
   position: absolute;
   top: 80px;

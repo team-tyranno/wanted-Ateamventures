@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { STYLE } from 'commons';
 
 export const Container = styled.div`
   width: 100%;
@@ -9,7 +10,7 @@ export const Container = styled.div`
 
   margin-top: 32px;
 
-  @media (max-width: 360px) {
+  @media (max-width: ${STYLE.MOBILE_WIDTH}px) {
     display: flex;
     align-items: start;
     flex-direction: column;
@@ -35,6 +36,9 @@ export const DropDownWrap = styled.div`
   align-items: center;
   justify-content: space-between;
   /* border: 1px solid black; */
+  @media (max-width: ${STYLE.MOBILE_WIDTH}px) {
+    margin-bottom: 20px;
+  }
 `;
 
 export const Div = styled.div`
@@ -47,6 +51,7 @@ export const Div = styled.div`
   color: #2196f3;
   font-family: 'Noto Sans KR Regular';
   margin-left: 15px;
+  /* min-width: max-content; */
 `;
 
 export const ResetIcon = styled.img`
