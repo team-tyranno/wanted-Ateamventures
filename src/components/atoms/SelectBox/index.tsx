@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { arrowDropDown, Checkbox, CheckboxOn } from 'assets';
 import { nanoid } from 'nanoid';
 import * as S from './style';

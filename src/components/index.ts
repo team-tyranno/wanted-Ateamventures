@@ -5,10 +5,6 @@ export { MenuItem } from 'components/atoms/MenuItem';
 export { Logo } from 'components/atoms/Logo';
 export { SelectBox } from 'components/atoms/SelectBox';
 
-// organisms
-export { Gnb } from 'components/organisms/Gnb';
-export { Filtering } from 'components/organisms/Filtering';
-
 // Molecules
 export { ToggleSection } from 'components/molecules/ToggleSection';
 

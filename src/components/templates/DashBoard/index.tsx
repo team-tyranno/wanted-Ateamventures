@@ -1,5 +1,5 @@
 import React from 'react';
-import { Filtering, ButtonSection, InfoSection, CardSection } from 'components';
+import { ButtonSection, InfoSection, CardSection } from 'components';
 import * as S from './style';
 
 export function DashBoard() {
