@@ -1,18 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Gnb, DashBoard } from 'components';
+import { ItemType } from 'types';
 import * as S from './style';
-
-interface ItemType {
-  id: number;
-  title: string;
-  client: string;
-  due: string;
-  count: number;
-  amount: number;
-  method: object;
-  material: object;
-  status: string;
-}
 
 export function Main() {
   const [dashBoardData, setDashBoardData] = useState<Array<ItemType>>([]);
