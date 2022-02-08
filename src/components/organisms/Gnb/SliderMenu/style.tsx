@@ -74,7 +74,7 @@ export const Item = styled.div`
   height: 20px;
   margin-bottom: 20px;
 
-  font-family: Noto Sans KR Regular;
+  font-family: Noto Sans KR Medium;
   font-size: 14px;
   line-height: 20px;
 
