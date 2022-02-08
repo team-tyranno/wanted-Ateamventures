@@ -39,7 +39,8 @@ export function CardItem({ item }: ItemProps): React.ReactElement {
           채팅하기
         </button>
       </div>
-      <span className="inquiry">{status}</span>
+
+      {status === '상담중' && <span className="inquiry">{status}</span>}
     </S.Wrapper>
   );
 }
