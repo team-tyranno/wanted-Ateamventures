@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from 'react';
+<<<<<<< HEAD
 import { SelectBox } from 'components';
 
+=======
+import { Gnb, DashBoard } from 'components';
+>>>>>>> cf0a5b17af4f99fd5528cb2036eba6169109234b
 import * as S from './style';
 
 export function Main() {
@@ -9,7 +13,7 @@ export function Main() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('/requests');
+        const response = await fetch('http://localhost:3001/requests'); // /requests
         if (response.status > 400) {
           throw new Error('에러');
         }
@@ -24,6 +28,7 @@ export function Main() {
   }, []);
 
   return (
+<<<<<<< HEAD
     <S.Container>
       Hello, Tyrannos!
       <S.Container>
@@ -31,5 +36,11 @@ export function Main() {
         <SelectBox title="재료" />
       </S.Container>
     </S.Container>
+=======
+    <>
+      <Gnb />
+      <DashBoard />
+    </>
+>>>>>>> cf0a5b17af4f99fd5528cb2036eba6169109234b
   );
 }
