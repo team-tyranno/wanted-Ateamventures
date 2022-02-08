@@ -1,6 +1,6 @@
 import React from 'react';
 import { SelectBox, ToggleSection } from 'components';
-import { processMethods, materials } from 'commons/dropDown';
+import { PROCESS_METHODS, MATERIALS } from 'commons/dropDown';
 import { refresh } from 'assets';
 import * as S from './style';
 
@@ -30,14 +30,14 @@ export function ButtonSection({
       <S.DropDownWrap>
         <S.DropDown>
           <SelectBox
-            title={processMethods.title}
-            selectList={processMethods.selectList}
+            title={PROCESS_METHODS.title}
+            selectList={PROCESS_METHODS.selectList}
             filter={methodFilter}
             setFilter={setMethodFilter}
           />
           <SelectBox
-            title={materials.title}
-            selectList={materials.selectList}
+            title={MATERIALS.title}
+            selectList={MATERIALS.selectList}
             filter={materialFilter}
             setFilter={setMaterialFilter}
           />
