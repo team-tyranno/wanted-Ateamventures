@@ -1,28 +1,16 @@
 import styled from 'styled-components';
 
-export const Container = styled.div``;
+export const Container = styled.div`
+  width: 78%;
+  height: 1100px;
 
-export const InfoSection = styled.section`
-  width: 100%;
-  overflow: hidden;
-`;
+  @media (max-width: 360px) {
+    margin-top: 68px;
+  }
 
-export const DashBoardInfo = styled.div`
-  position: absolute;
-  width: 284px;
-  height: 56px;
-  left: 155px;
-  top: 110px;
-`;
-
-export const Title = styled.div`
-  width: 97px;
-  height: 32px;
-`;
-
-export const Description = styled.div`
-  width: 284px;
-  height: 24px;
+  @media (min-width: 360px) {
+    margin-top: 110px;
+  }
 `;
 
 export const ButtonSection = styled.section`
