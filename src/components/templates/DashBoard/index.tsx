@@ -1,5 +1,5 @@
 import React from 'react';
-import { MenuItem } from 'components';
+import { MenuItem, Filtering } from 'components';
 import * as S from './style';
 
 const titleFontOption = {
@@ -38,7 +38,7 @@ export function DashBoard() {
         </S.DashBoardInfo>
       </S.InfoSection>
       <S.ButtonSection>
-        <S.DropDown />
+        <Filtering />
         <S.ButtonSwitch />
       </S.ButtonSection>
       <S.CardSection />

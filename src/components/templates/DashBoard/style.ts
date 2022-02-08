@@ -27,16 +27,7 @@ export const Description = styled.div`
 
 export const ButtonSection = styled.section`
   width: 100%;
-`;
-
-export const DropDown = styled.div`
-  position: absolute;
-  width: 182px;
-  height: 32px;
-  left: 155px;
-  top: 198px;
-
-  border: 1px solid black;
+  position: relative;
 `;
 
 export const ButtonSwitch = styled.div`

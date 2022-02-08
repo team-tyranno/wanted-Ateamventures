@@ -1,10 +1,5 @@
 import React, { useState, useEffect } from 'react';
-<<<<<<< HEAD
-import { SelectBox } from 'components';
-
-=======
 import { Gnb, DashBoard } from 'components';
->>>>>>> cf0a5b17af4f99fd5528cb2036eba6169109234b
 import * as S from './style';
 
 export function Main() {
@@ -28,19 +23,9 @@ export function Main() {
   }, []);
 
   return (
-<<<<<<< HEAD
-    <S.Container>
-      Hello, Tyrannos!
-      <S.Container>
-        <SelectBox title="가공방식" />
-        <SelectBox title="재료" />
-      </S.Container>
-    </S.Container>
-=======
     <>
       <Gnb />
       <DashBoard />
     </>
->>>>>>> cf0a5b17af4f99fd5528cb2036eba6169109234b
   );
 }
