@@ -9,14 +9,14 @@ export function Main() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('http://localhost:3001/requests'); // /requests
+        const response = await fetch('/requests');
         if (response.status > 400) {
-          throw new Error('에러');
+          throw new Error('서버 요청에 실패했습니다');
         }
         const json = await response.json();
         setDashBoardData(json);
       } catch (error) {
-        console.log('에러2');
+        console.log('서버가 응답하지 않습니다');
       }
     };
     fetchData();
