@@ -128,7 +128,7 @@
 1. Repository를 clone한다.
 
 ```sh
-git clone https://github.com/gml9812/wanted-frontend-pre-on-boarding-mission.git
+git clone https://github.com/team-tyranno/wanted-Ateamventures.git
 ```
 
 2. NPM Package들을 설치한다.
