@@ -15,7 +15,7 @@
     필터링 기능이 있는 대시보드를 구현한 과제입니다.
     <br />
     <br />
-    <a href="https://wanted-ateamventures.herokuapp.com/"><strong>배포 링크</strong></a>
+    <a href="https://ateamventures123.herokuapp.com/"><strong>배포 링크</strong></a>
   </p>
 </div>
 
